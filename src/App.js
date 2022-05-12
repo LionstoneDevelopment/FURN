@@ -1,8 +1,12 @@
-import "../src/categories.styles.scss";
-import CategoryList from "../src/components/category-list/category-list.component";
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/home/home.component";
 
 const App = () => {
-  return <CategoryList />;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
 };
 
 export default App;
